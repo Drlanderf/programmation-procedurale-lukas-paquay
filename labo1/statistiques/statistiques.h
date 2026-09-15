@@ -1,8 +1,16 @@
-//
-// Created by lukas on 14/09/2026.
-//
+#ifndef STATISTIQUES_H
+#define STATISTIQUES_H
 
-#ifndef PROGRAMMATION_PROCEDURALE_LUKAS_PAQUAY_STATISTIQUES_H
-#define PROGRAMMATION_PROCEDURALE_LUKAS_PAQUAY_STATISTIQUES_H
+#include "../competences/competences.h"
+#include "../projets/projets.h"
 
-#endif //PROGRAMMATION_PROCEDURALE_LUKAS_PAQUAY_STATISTIQUES_H
+void afficherStatistiques(const Competence competences[], int nbCompetences,const Projet projets[], int nbProjets);
+
+int compterCompetences(const Competence competences[], int nbCompetences);
+int trouverNiveauMaximum(const Competence competences[], int nbCompetences);
+int compterProjetsTermines(const Projet projets[], int nbProjets);
+int compterProjetsEnCours(const Projet projets[], int nbProjets);
+int compterProjetsProduction(const Projet projets[], int nbProjets);
+double calculerTauxProjetsActifs(const Projet projets[], int nbProjets);
+
+#endif

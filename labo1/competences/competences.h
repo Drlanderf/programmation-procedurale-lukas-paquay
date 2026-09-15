@@ -1,8 +1,21 @@
-//
-// Created by lukas on 14/09/2026.
-//
+#ifndef COMPETENCES_H
+#define COMPETENCES_H
 
-#ifndef PROGRAMMATION_PROCEDURALE_LUKAS_PAQUAY_COMPETENCES_H
-#define PROGRAMMATION_PROCEDURALE_LUKAS_PAQUAY_COMPETENCES_H
+#define MAX_COMPETENCES 50
+#define TAILLE_TECHNOLOGIE 80
 
-#endif //PROGRAMMATION_PROCEDURALE_LUKAS_PAQUAY_COMPETENCES_H
+typedef struct
+{
+    char technologie[TAILLE_TECHNOLOGIE];
+    int niveau;
+} Competence;
+
+int chargerCompetences(const char *nomFichier,Competence competences[],int *nbCompetences);
+
+void afficherToutesCompetences(const Competence competences[], int nbCompetences);
+void afficherCompetencesNiveau4(const Competence competences[], int nbCompetences);
+void afficherMeilleureCompetence(const Competence competences[], int nbCompetences);
+void menuCompetences(const Competence competences[], int nbCompetences);
+double calculerNiveauMoyen(const Competence competences[], int nbCompetences);
+
+#endif

@@ -1,0 +1,25 @@
+[PROFIL]
+nom=Paquay
+prenom=Lukas
+formation=Bachelier en Informatique
+orientation=Reseaux et Telecommunications
+presentation=Passionne d'informatique, je m'interesse particulierement a la programmation, aux systemes, aux reseaux et a la virtualisation.
+github=https://github.com/Drlanderf
+
+[COMPETENCES]
+C / C++;4
+C#;4
+Java;3
+Python;2
+SQL;4
+Linux;4
+Windows Server;4
+VMware ESXi;4
+Reseaux;5
+Virtualisation;4
+
+[PROJETS]
+Projet C# MVVM;Programmation;C# / MVVM / Access / MySQL;TERMINE
+Laboratoire reseaux et virtualisation;Reseaux;C / Linux / VMware ESXi;EN COURS
+Homelab;Infrastructure;Linux / Docker / SQL;EN PRODUCTION
+Serveur multimedia;Infrastructure;Linux / Docker / Jellyfin;EN PRODUCTION
